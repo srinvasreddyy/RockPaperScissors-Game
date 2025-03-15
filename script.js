@@ -13,9 +13,22 @@ document.getElementsByClassName("scissors")[0].addEventListener("click",()=>{
 
 //mode changing
 
-document.getElementsByClassName("mode")[0].addEventListener("click" ,()=>{
-    document.documentElement.style.setProperty("--white","black");
-    document.documentElement.style.setProperty("--black","white");})
+function theme() {
+    let modeElement = document.getElementsByClassName("mode")[0]; 
+    if (!modeElement) return; // Prevent errors if element is missing
+
+    let mode = modeElement.innerText.trim().toLowerCase(); // Normalize text
+
+    if (mode === "light") {
+        document.documentElement.style.setProperty("--white", "black");
+        document.documentElement.style.setProperty("--black", "white");
+        modeElement.innerText = "dark"; // Update mode text
+    } else {
+        document.documentElement.style.setProperty("--white", "white");
+        document.documentElement.style.setProperty("--black", "black");
+        modeElement.innerText = "light"; // Update mode text
+    }
+}
 
 
 
