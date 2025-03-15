@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+:root{
+    --white : #ffffff;
+    --black : #000000;
+}
+
+.heading{
+    width: 100%;
+    background-color: var(--white);
+    color : var(--black);
+    font-family: sans-serif;
+    font-size: 2vw;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode{
+    padding: 5px 17px 5px 17px;
+    font-size: 1.5vw;
+    border-radius: 20px;
+    border: 1px solid ;
+    background-color: var(--white);
+    color : var(--black);
+    position: absolute;
+    right: 1.4vw;
+    transition: all 0.2s ;
+}
+
+.mode:hover{
+    transform: scale(1.02);
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+@media (max-width: 768px) {
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+}
+@media (min-width: 992px) {
+    .image{
+        height: 20vh;
+        width: 20vh;
+    }
+
+}
+
+.image{
+    background-size:contain;
+    background-position: center;
+    width: 15vh;
+    height: 15vh;
+    border: 1px solid var(--black);
+    margin: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.rock{
+    background-image: url(image1.png);
+    border-radius: 60%;
+}
+.paper{
+    background-image: url(image2.png);
+    border-radius: 90%;
+}
+.scissors{
+    background-image: url(image.png);
+    border-radius: 80%;
+}
+
+.score{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 5vh;
+    font-family: sans-serif;
+}
+.human{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scr{
+    font-size: 75px;
+}
+.name{
+    font-size: 25px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    align-items: center;
+    flex-direction: column;
+}
+div > .select{
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    padding: 20px 30px 20px 30px ;
+    border-radius: 40px;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+.compselected{
+    transform: scale(1.1);
+    outline: 6px solid blue;
+}
+.humselected{
+    transform: scale(1.1);
+    outline: 6px solid rgb(75, 224, 0);
+}
+.win{
+    box-shadow: 0px 0px 20px 20px rgb(123, 253, 2);
+}
+.lost{
+    box-shadow: 0px 0px 20px 20px red;
+}
+.draw{
+    border: 6px solid rgb(222, 238, 130);
+}
+.temp{
+    font-family: sans-serif;
+    font-size: 20px;
+}
