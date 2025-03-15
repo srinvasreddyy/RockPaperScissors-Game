@@ -71,15 +71,15 @@
     transition: all 0.2s ease-in-out;
 }
 .rock{
-    background-image: url(image1.png);
+    background-image: url(https://wrpsa.com/wp-content/uploads/2021/08/rock-400x374.png);
     border-radius: 60%;
 }
 .paper{
-    background-image: url(image2.png);
+    background-image: url(https://wrpsa.com/wp-content/uploads/2021/08/paper-400x374.png);
     border-radius: 90%;
 }
 .scissors{
-    background-image: url(image.png);
+    background-image: url(https://wrpsa.com/wp-content/uploads/2021/08/scissors-400x374.png);
     border-radius: 80%;
 }
 
